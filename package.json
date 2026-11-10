@@ -28,18 +28,18 @@
   "license": "MIT",
   "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
   "dependencies": {
-    "@atproto/api": "^0.14.9",
+    "@atproto/api": "^0.14.22",
     "@atproto/oauth-client-node": "^0.3.17",
-    "@modelcontextprotocol/client": "^2.2.0",
-    "@modelcontextprotocol/core": "^2.2.0",
+    "@modelcontextprotocol/client": "^2.3.0",
+    "@modelcontextprotocol/core": "^2.3.0",
     "@modelcontextprotocol/sdk": "^1.32.0",
-    "@modelcontextprotocol/server": "^2.2.0",
+    "@modelcontextprotocol/server": "^2.3.0",
     "better-sqlite3": "^12.9.0",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
     "express": "^5.2.1",
     "jose": "^6.2.2",
-    "zod": "^4.6.5"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
@@ -47,5 +47,24 @@
     "@types/node": "^22.13.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "@hono/node-server": ">=2.1.5",
+      "@modelcontextprotocol/client": ">=2.3.0",
+      "@modelcontextprotocol/core": ">=2.3.0",
+      "@modelcontextprotocol/sdk": ">=1.32.0",
+      "@modelcontextprotocol/server": ">=2.3.0",
+      "body-parser": "^2.4.0",
+      "diff": ">=4.0.4",
+      "fast-uri": ">=3.1.9",
+      "hono": ">=4.13.11",
+      "ip-address": ">=10.7.4",
+      "path-to-regexp": "^8.4.0",
+      "proxy-addr": "^2.0.8",
+      "qs": "^6.16.1",
+      "undici": "^6.29.1",
+      "zod": "^4.6.7"
+    }
   }
 }
